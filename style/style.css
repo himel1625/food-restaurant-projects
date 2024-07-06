@@ -238,3 +238,42 @@ height: 400px;
   height: 30px;
   width: 30px;
 }
+/* card are  */
+.card
+{
+  height: 80vh;
+  margin-top: 20%;
+}
+
+/* social are  */
+.social
+{
+  background-image: url(../assets/social-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  
+
+}
+.social_items
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background:#fff;
+  height: 400px;
+  position: relative;
+  z-index: 99;
+  opacity: 0.5;
+}
+.containers
+{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 60px;
+  position: absolute;
+  z-index:-1;
+}
