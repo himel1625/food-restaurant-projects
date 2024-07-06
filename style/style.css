@@ -14,8 +14,7 @@
 }
 
 body {
-  overflow: hidden;
-}
+  scroll-behavior: smooth;
 
 /* hero are  */
 .hero_container {
@@ -81,4 +80,109 @@ body {
 }
 .hero_btn button:hover {
   background: green;
+}
+
+ /* card  Box are  */
+.card_container
+{
+  height: 100vh;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  background: #fff;
+}
+.card_component
+{
+  text-align: center;
+  height: 20%;
+
+}
+.card_component p
+{
+  font-size: 1rem;
+  font-family: var(--secondaryFonts);
+  font-weight: 500;
+  color:rgb(16, 16, 16);
+  opacity: 0.6;
+}
+.card_component h1
+{
+  text-align: center;
+  margin-top: 2rem;
+  font-family: var(--secondaryFonts);
+  font-weight: 700;
+}
+
+.card_items
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+img{
+  width: 380px;
+  height: 250px;
+}
+.menu
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.menu button
+{ 
+  
+  padding: 14px 30px;
+  color: var(--secondaryColor);
+  background: rgba(82, 195, 3, 0.15);
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-family: var(--secondaryFonts);
+  font-weight: 600;
+}
+.menu h1
+{
+  font-size: 2rem;
+  font-family: var(--secondaryFonts);
+  font-weight: 500;
+  margin-top: 10px;
+  text-align:center;
+}
+.menu p
+{
+  width: 85%;
+  text-align: center;
+  color: rgb(16, 16, 16);
+  font-family: var(--secondaryFonts);
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.btn button
+{
+  
+  background: var(--btnColor);
+  padding:14px 30px ;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: var(--secondaryFonts);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s;
+}  
+.btn button:hover
+{
+  background: green;
+}  
+
+.btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
 }
