@@ -1,6 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --primaryColor: #fff;
+  --secondaryColor: #000;
+  --primaryFonts: 'Anton SC', sans-serif;
+  --secondaryFonts: 'Work Sans', sans-serif;
+  --btnColor: rgb(80, 195, 3);
+  --pColor: rgb(255, 255, 255);
+}
 
+body {
+  overflow: hidden;
+}
+
+/* hero are  */
+.hero_container {
+  height: 100vh;
+  background: linear-gradient(
+      0deg,
+      rgb(16, 16, 16) -19.5%,
+      rgba(16, 16, 16, 0) 100%
+    ),
+    url(../assets/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero_items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero_items h6 {
+  text-align: center;
+  color: var(--pColor);
+  font-size: 1rem;
+  font-family: var(--secondaryFonts);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.hero_items h1 {
+  text-align: center;
+  color: var(--primaryColor);
+  font-family: var(--secondaryFonts);
+  width: 45%;
+  font-size: 2rem;
+  line-height: 40px;
+  font-weight: 500;
+}
+.hero_items p {
+  text-align: center;
+  color: var(--pColor);
+  opacity: 0.7;
+  width: 68%;
+  font: var(--primaryFonts);
+  opacity: 0.7;
+}
+.hero_btn button {
+  text-align: center;
+  padding: 12px 22px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: var(--btnColor);
+  color: var(--primaryColor);
+  font-size: 18px;
+  font-family: var(--secondaryFonts);
+  font-weight: 600;
+  margin-top: 2rem;
+  transition: all 0.5s;
+}
+.hero_btn button:hover {
+  background: green;
+}
