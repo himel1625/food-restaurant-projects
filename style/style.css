@@ -6,7 +6,7 @@
 }
 :root {
   --primaryColor: #fff;
-  --secondaryColor: #000;
+  --secondaryColor: rgb(16, 16, 16);
   --primaryFonts: 'Anton SC', sans-serif;
   --secondaryFonts: 'Work Sans', sans-serif;
   --btnColor: rgb(80, 195, 3);
@@ -85,10 +85,7 @@ body {
  /* card  Box are  */
 .card_container
 {
-  height: 100vh;
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
+  height: 85vh;
   background: #fff;
 }
 .card_component
@@ -161,7 +158,6 @@ img{
   font-weight: 400;
   margin-top: 5px;
 }
-
 .btn button
 {
   
@@ -185,4 +181,60 @@ img{
   display: flex;
   justify-content: center;
   margin-top: 5rem;
+}
+
+/* about us are   */
+
+.abouts_container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+.containers01 img
+{
+width: 650px;
+height: 400px;
+}
+.containers02
+{
+  line-height: 38px;
+}
+.containers02 h1
+{
+  color: var(--secondaryColor);
+  font-family: var(--secondaryFonts);
+  font-weight: 600;
+  width: 90%;
+  text-align: center;
+}
+.containers02 p 
+{
+
+  font-family: var(--secondaryFonts);
+  font-weight: 500;
+  color: var(--secondaryColor);
+  text-align: center;
+  margin-bottom: 20px;
+}
+.containers02 h4 
+{
+  text-align: center;
+  padding: 15px;
+  font-family: var(--secondaryFonts);
+  font-weight: 600;
+  opacity: 0.6;
+}
+.img_are{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+.img_are img 
+{
+  height: 30px;
+  width: 30px;
 }
